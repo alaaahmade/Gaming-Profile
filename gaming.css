@@ -1,0 +1,144 @@
+:root {
+    --margin: 20px 30px 20px 30px;
+    --color: #9b9797;
+    --margSection: 20px 0;
+    --task-color: #e91e63;
+    --backgruond : white;
+    --span-Color : #009688;
+}
+
+body {
+    margin: var(--margin);
+    background-color: var(--color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+    margin: var(--margSection);
+    background-color: var(--backgruond);
+    box-shadow: 3px 8px 20px black;
+}
+
+.player-box {
+    display: flex;
+    /* height: 200px; */
+}
+
+.player-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    margin: var(--margin);
+    margin-bottom: 0;
+}
+
+.player-Img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid var(--color);
+
+
+}
+span{
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+
+.ribbon {
+    background-color: var(--color);
+    width: 90%;
+    height: 20px;
+    border-radius: 0.35em;
+}
+
+.ribbon .rib {
+    background-color: var(--span-Color);
+    width: 75%;
+    height: 100%;
+    border-radius: 0.35em;
+}
+
+span.point {
+    color: var(--span-Color);
+}
+
+.player-Text{
+    margin: var(--margin);
+    line-height: 30px;
+}
+
+.player-Text::after{
+    content: "140 Days in The Ship";
+    position: relative;
+    bottom: -100px;
+    left: 85%;
+}
+
+.task{
+    color: var(--task-color);
+}
+
+.arr-point{
+    margin: var(--margin);
+    padding: 20px 0;
+}
+
+h2{
+    display:inline-block;
+    background-color: #607d8b;
+    padding: 15px;
+    color: var(--backgruond);
+    margin: 0;
+}
+
+section.trophise{
+    display: flex;
+    flex-direction: column;
+}
+.trophise div{
+    margin: var(--margin);
+}
+
+.trophise .img-box img{
+    width: calc((100% - 72px) / 12);
+    height: 65px;
+    border-radius: 3px;
+    border: 1px dashed black;
+    
+
+}
+.trophise .img-box {
+    margin-top: 0;
+}
+.opas{
+    opacity: 0.08;
+}
+.ladder div{
+    padding: 20px 0;
+    margin: var(--margin);
+}
+
+.your-Powera div{
+    margin: var(--margin);
+    padding: 20px 0;
+}
+
+.your-Powera .text{
+    padding-top: 0;
+}
+.your-Powera .text p{
+    display: flex;
+    justify-content: space-between;
+}
+span.true{
+    color:green;
+}
+span.false{
+    color:red;
+}
